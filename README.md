@@ -7,7 +7,6 @@
 * 1.google  list(Lists.newArrayList)
 * 采用 picasso 加载图片
 * 采用butterknife 注解
-* 采用 RecyclerView 实现首页新闻多 item 布局
 * 自定义控件 DragGridView 
 * 自定义控件 SquareLayout 
 
