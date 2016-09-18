@@ -1,5 +1,5 @@
 # WeChatImageSelectors
-仿微信图片
+仿微信图片选择器
 
 ![](http://odox9bbkw.bkt.clouddn.com/2016-09-11%2017_22_37.gif)
 
