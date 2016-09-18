@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeChatImageSelector</string>
+    <string name="string_clean">取消</string>
+    <string name="string_send">发送</string>
+    <string name="string_send_contetn">这一该的想法...</string>
+    <string name="string_compelete">完成</string>
+</resources>

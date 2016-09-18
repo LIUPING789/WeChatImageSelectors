@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/activity_bar_gray">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_selector"
+            android:gravity="center"
+            android:text="预览"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_18" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:onClick="ok"
+            android:text="@string/string_compelete"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom"
+            android:horizontalSpacing="3dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"></GridView>
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d000">
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/spinner_bg"
+                android:onClick="select"
+                android:text="所有图片"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="#fff"
+
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_above="@id/bottom"
+            android:background="#fff"
+            android:visibility="gone"></ListView>
+    </RelativeLayout>
+
+</LinearLayout>
