@@ -1,1 +1,2 @@
 # WeChatImageSelector
+# WeChatImageSelectors
